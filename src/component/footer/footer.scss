@@ -42,6 +42,11 @@
   }
 }
 .footerContact {
+  @media only screen and (max-width: 991px) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+  }
   &__box {
     margin-bottom: 24px;
   }
@@ -63,6 +68,9 @@
     a:hover {
       text-decoration: underline;
     }
+    @media only screen and (max-width: 991px) {
+      justify-content: center;
+    }
   }
   &__socialtitle {
     font-size: 24px;
@@ -73,6 +81,9 @@
     display: flex;
     gap: 16px;
     align-items: center;
+    @media only screen and (max-width: 991px) {
+      justify-content: center;
+    }
   }
   &__socialLink {
     background-color: #cac2d1;
