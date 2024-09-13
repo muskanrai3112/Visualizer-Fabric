@@ -1,0 +1,55 @@
+.bannerSection.privacyPolicy {
+  background-image: url("../../assets/images/pravicyPolicy.png");
+}
+.boldText {
+  font-size: 16px;
+  font-weight: 700;
+  color: #7e6e8c;
+}
+.underlineText {
+  color: #8c2a8d;
+  text-decoration: underline;
+}
+.policyQuerry {
+  padding: 95px 0;
+  @media only screen and (max-width: 991px) {
+    padding: 75px 0;
+  }
+  &__title {
+    font-size: 30px;
+    line-height: 38px;
+    color: #381952;
+    margin-bottom: 30px;
+  }
+  &__para {
+    margin-bottom: 30px;
+  }
+  &__paraTitle {
+    color: #381952;
+    margin-bottom: 12px;
+  }
+}
+.parapoints {
+  padding: 12px 0;
+  &__Point1,
+  &__Point2,
+  &__Point3,
+  &__Point4 {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
+  &__Point1,
+  &__Point2,
+  &__Point3 {
+    margin-bottom: 8px;
+  }
+  &__Point1 svg,
+  &__Point2 svg,
+  &__Point3 svg,
+  &__Point4 svg {
+    height: 15px;
+    width: 15px;
+    object-fit: contain;
+  }
+}

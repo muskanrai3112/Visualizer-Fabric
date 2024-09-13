@@ -1,0 +1,106 @@
+.bannerSection {
+  background-image: url(/src/assets/images/aboutFabric.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 132px 0 36px 0;
+  position: relative;
+
+  // &__title {
+  //   text-align: center;
+  //   color: #ffffff;
+  //   margin-bottom: 126px;
+  //   position: relative;
+  //   z-index: 1;
+  // }
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.5411764706);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+  @media only screen and (max-width: 991px) {
+    padding: 80px 0 36px 0;
+  }
+}
+.maintitle {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 126px;
+  position: relative;
+  z-index: 0;
+  @media only screen and (max-width: 991px) {
+    margin-bottom: 80px;
+  }
+}
+.behindStory {
+  padding: 95px 0 72px 0;
+  @media only screen and (max-width: 991px) {
+    padding: 75px 0 72px 0;
+  }
+  &__title {
+    text-align: center;
+    margin-bottom: 35px;
+    color: #381952;
+  }
+  &__para {
+    text-align: center;
+    margin-bottom: 24px;
+    color: #7e6e8c;
+  }
+}
+.clickIcons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  gap: 8px;
+  position: relative;
+  z-index: 0;
+  &__home {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  &__home svg {
+    object-fit: contain;
+    width: auto;
+  }
+
+  &__icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    gap: 24px;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__homeTitle {
+    transition: all 0.5s;
+  }
+  &__about,
+  &__about a {
+    color: #ffffff;
+    transition: all 0.5s;
+  }
+  &__icons {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    list-style: none;
+  }
+  &__about,
+  &__homeTitle:hover,
+  &__about a:hover {
+    &:hover {
+      color: #ac83cf;
+      cursor: pointer;
+    }
+  }
+}

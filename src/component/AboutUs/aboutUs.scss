@@ -1,0 +1,47 @@
+.aboutUs {
+  padding: 99px 0;
+  background: rgb(249 250 254 / 50%);
+  position: relative;
+  @media only screen and (max-width: 991px) {
+    padding: 60px 0;
+  }
+  &__content {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+    z-index: 1;
+    position: relative;
+    @media only screen and (max-width: 991px) {
+      flex-direction: column;
+    }
+  }
+
+  &__info,
+  &__img {
+    width: 50%;
+    @media only screen and (max-width: 991px) {
+      width: 100%;
+    }
+  }
+  &__img img {
+    width: 100%;
+    object-fit: contain;
+  }
+  &::before {
+    content: "";
+    background-image: url(/src/assets/images/sliderBackground.png);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    top: 0;
+    background-size: cover;
+    background-position: left;
+    transform: scaleX(-1);
+  }
+  &__title {
+    margin-bottom: 22px;
+    color: #381952;
+  }
+}

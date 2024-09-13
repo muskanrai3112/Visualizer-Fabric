@@ -1,0 +1,145 @@
+// Default CSS
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  transition: all 0.5 ease;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+input {
+  box-shadow: none;
+  outline: none;
+  &:hover {
+    outline: none;
+    box-shadow: none;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+// Common CSS
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+p {
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 400;
+  color: #7e6e8c;
+}
+h1 {
+  font-size: 64px;
+  line-height: 76px;
+  font-weight: 600;
+}
+h2 {
+  font-size: 45px;
+  line-height: 54px;
+  font-weight: 600;
+}
+h3 {
+  font-size: 36px;
+  line-height: 46px;
+  font-weight: 600;
+}
+h4 {
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 600;
+}
+h5 {
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 700;
+}
+h6 {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+}
+.purpleText {
+  color: #8c2a8d;
+}
+
+// Button CSS
+.button {
+  background: #8c2a8d;
+  padding: 10px 20px;
+  border: 2px solid #8c2a8d;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  border-radius: 8px;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  &--border {
+    background: #fff;
+    color: #8c2a8d;
+    gap: 10px;
+  }
+}
+// view more
+.viewMore {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #8c2a8d;
+  display: flex;
+  gap: 6px;
+  text-decoration: underline;
+  transition: all 0.5s ease;
+}
+
+// Responsive for breaking point 991px
+@media only screen and (max-width: 991px) {
+  h1 {
+    font-size: 42px;
+    line-height: 52px;
+  }
+  h2 {
+    font-size: 36px;
+    line-height: 46px;
+  }
+  h3 {
+    font-size: 32px;
+    line-height: normal;
+  }
+  h4 {
+    font-size: 24px;
+    line-height: normal;
+  }
+  h5 {
+    font-size: 20px;
+    line-height: normal;
+  }
+  h6 {
+    font-size: 18px;
+    line-height: normal;
+    font-weight: 500;
+  }
+  .viewMore {
+    gap: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 12px;
+  }
+}

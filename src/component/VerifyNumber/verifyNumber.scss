@@ -1,0 +1,46 @@
+.model__message {
+  text-align: center;
+}
+.model__title {
+  font-weight: 700;
+}
+.model__message {
+  margin-bottom: 40px;
+}
+.model__qstn span {
+  color: #92278f;
+  font-weight: 700;
+  text-decoration: underline;
+}
+.model__qstn {
+  color: #391952;
+  text-align: center;
+}
+.verifyInput {
+  margin-bottom: 41px;
+  &__box {
+    border: 1px solid #e1d9e9;
+    height: 48px;
+    max-width: 48px;
+    border-radius: 8px;
+    text-align: center;
+    color: #e1d9e9;
+  }
+  &__container {
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    position: relative;
+  }
+
+  &__title {
+    text-align: center;
+    font-weight: 700;
+    color: #391952;
+    margin-bottom: 12px;
+  }
+}
+.verifyBtn {
+  width: 100%;
+  margin-bottom: 30px;
+}

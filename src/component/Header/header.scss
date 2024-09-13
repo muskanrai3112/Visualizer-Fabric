@@ -1,0 +1,119 @@
+.header {
+  padding: 8px 0;
+  background-color: #ffffff;
+  box-shadow: 0px 12px 18px 0px rgba(218, 222, 232, 1);
+  &__content {
+    align-items: center;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 185px auto 185px;
+  }
+  &__icon img {
+    height: 70px;
+    width: auto;
+    object-fit: contain;
+  }
+
+  &__menu {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+  }
+  &__menu a {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #18191f;
+    @media only screen and (max-width: 991px) {
+      max-width: max-content;
+    }
+  }
+  &__menu a:hover {
+    color: #8c2a8d;
+  }
+}
+
+.header-btn {
+  display: flex;
+  gap: 14px;
+}
+.button__signUp {
+  background: #ffffff;
+  color: #8c2a8d;
+}
+.button__login {
+  color: #8c2a8d;
+  background: #ffffff;
+}
+.menu__point {
+  position: relative;
+}
+.menu__point:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  border-radius: 6px;
+  width: 100%;
+  background: linear-gradient(90deg, #e1d9e9 0%, #8c2a8d 100%);
+}
+.bars {
+  display: none;
+}
+.headerBtnMobile {
+  display: none;
+}
+.headerBtn {
+  display: flex;
+  gap: 14px;
+}
+
+// Responsive header css
+@media only screen and (max-width: 991px) {
+  .header__menu {
+    display: none;
+  }
+  .header-btn {
+    display: none;
+  }
+  .bars {
+    display: block;
+  }
+  .header__content {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header__toggle {
+    position: absolute;
+    top: 79px;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transform: translate(-50%, 0);
+    z-index: 1;
+    padding: 20px;
+    width: 100%;
+    background: #fff;
+  }
+  .menu__point {
+    color: #000;
+  }
+  .active {
+    display: none;
+  }
+
+  .action_btn {
+    display: none;
+  }
+  .headerBtn {
+    display: none;
+  }
+  .headerBtnMobile {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}

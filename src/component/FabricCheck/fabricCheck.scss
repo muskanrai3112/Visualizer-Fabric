@@ -1,0 +1,45 @@
+.fabricCheck {
+  padding: 97px 0;
+  @media only screen and (max-width: 991px) {
+    padding: 60px 0;
+  }
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 52px;
+    @media only screen and (max-width: 991px) {
+      gap: 25px;
+      flex-direction: column;
+      align-items: normal;
+    }
+  }
+  &__mainTitle {
+    margin-bottom: 22px;
+    color: #381952;
+  }
+  &__info {
+    margin-bottom: 32px;
+  }
+  &__img img {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    @media only screen and (max-width: 991px) {
+      height: 250px;
+      width: 250px;
+    }
+    @media only screen and (max-width: 600px) {
+      height: 65%;
+      width: 65%;
+    }
+  }
+  .overlapImg {
+    margin-left: 150px;
+    margin-top: -150px;
+    @media only screen and (max-width: 600px) {
+      margin-left: 30%;
+      margin-top: -30%;
+    }
+  }
+}
